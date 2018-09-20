@@ -1,3 +1,8 @@
 body {
     background-color: darkolivegreen;
+    padding: 50px;
+}
+
+.studentForm {
+    border: solid;
 }
