@@ -6,3 +6,7 @@ body {
 .studentForm {
     border: solid;
 }
+
+#welcome {
+    text-align: center;
+}
