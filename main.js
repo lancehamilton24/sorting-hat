@@ -13,6 +13,21 @@ button.addEventListener('click', function(){
     }
 }, false);
 
+const activateDeletes = () => {
+  const deleteButtons = document.getElementsByClassName('deleteButton');
+  console.log(deleteButtons);
+
+  for (let i = 0; i < deleteButtons.length; i++) {
+    const element = deleteButtons[i];
+    element.addEventListener("click", (e) => {
+      // remove card that the button was on
+      const buttonIClicked = e.target;
+      const cardToDelete = buttonIClicked.parentNode.parentNode;
+      cardToDelete.remove();
+    })
+  }
+}
+
 //student card
 const printToDom = (stringToPrint, whereToPrint) => {
   document.getElementById(whereToPrint).innerHTML += stringToPrint;
@@ -28,7 +43,10 @@ const printToDom = (stringToPrint, whereToPrint) => {
   </div>`;
     counter ++;
     printToDom(domString, 'houseCards');
+    activateDeletes();
   } 
+
+
 
 document.getElementsByTagName('form')[0].addEventListener("submit", (e) => {
   e.preventDefault();
