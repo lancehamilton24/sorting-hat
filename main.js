@@ -6,7 +6,7 @@ let counter = 0
 
 //show and hide student form
 button.addEventListener('click', function(){
-    if (form.style.display == 'none') {
+    if (form.style.display = 'none') {
         form.style.display = 'block';
     } else {
         form.style.display = 'none'
