@@ -9,6 +9,13 @@ body {
 
 #welcome {
     text-align: center;
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+  
 }
 
+#poem{
+    text-align:center;
+    font-family: 'Creepster', cursive;
+}
 
