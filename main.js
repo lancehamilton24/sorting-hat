@@ -8,8 +8,10 @@ let counter = 0
 button.addEventListener('click', function(){
     if (form.style.display = 'none') {
         form.style.display = 'block';
+        
     } else {
         form.style.display = 'none'
+        
     }
 }, false);
 
